@@ -1,0 +1,6 @@
+students = float(input("Number of Students: "))
+apples = float(input("Number of Apples: "))
+aps = int(apples / students)
+print("Apples per Student:", aps)
+remaining = int(apples % students)
+print("Apples Remaining:", remaining)
