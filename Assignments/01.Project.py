@@ -6,4 +6,5 @@ print(int(years))
 weeks = ((nod % 365) / 7)
 print(int(weeks))
 
-days = (
+days = ((nod % 365) % 7)
+print(int(days))
