@@ -7,4 +7,4 @@ desksB = ((int(classB)) / 2)
 desksC = ((int(classC)) / 2)
 
 totaldesks = str(desksA + desksB + desksC)
-print(totaldesks)
+print("Number of Desks Needed:", totaldesks)
