@@ -1,10 +1,10 @@
 #nod = number of days
 nod = int(input("Number of Days: "))
 years = (nod / 365)
-print(int(years))
+print("Years:", int(years))
 
 weeks = ((nod % 365) / 7)
-print(int(weeks))
+print("Weeks:", int(weeks))
 
 days = ((nod % 365) % 7)
-print(int(days))
+print("Days:", int(days))
