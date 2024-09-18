@@ -29,4 +29,4 @@ for i in range(1, 5 + 1):
 
 #after number of guesses have been all used up
 if i == 5:
-    print(f"Nope. The number if was thinking of was {random_num}")
+    print(f"Nope. The number I was thinking of was {random_num}")
