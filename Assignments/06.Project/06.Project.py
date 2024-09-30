@@ -13,25 +13,6 @@ inputfile = open(inputfilename, 'r')
 mergefile = open(mergefilename, 'r')
 outputfile = open(outputfilename, 'w')
 
-#Read Lines of Input File
-inputline = inputfile.readline()
-while inputline != '':
-     inputrecord += 1
-     inputline = inputfile.readline()
-
-#Read Lines of Merge File
-mergeline = mergefile.readline()
-while mergeline != '':
-     mergerecord += 1
-     mergeline = mergefile.readline()
-
-#Creating Output
-inputline = inputfile.readline()
-while inputline != '':
-     outputfile.write(inputline)
-     outputrecord += 1
-     inputline = inputfile.readline()
-
 #Close Input and Merge and Output Files
 inputfile.close()
 mergefile.close()
