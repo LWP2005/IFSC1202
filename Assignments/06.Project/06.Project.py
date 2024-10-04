@@ -9,9 +9,25 @@ mergerecord = 0
 outputrecord = 0
 
 #Open Input and Merge for Reading and Output for Writing
+outputfile = open(outputfilename, 'w')
 inputfile = open(inputfilename, 'r')
 mergefile = open(mergefilename, 'r')
-outputfile = open(outputfilename, 'w')
+
+#Creating Output File
+inputline = inputfile.readline()
+while inputline != '':
+    outputfile.write(inputline)
+    inputrecord += 1
+    outputrecord += 1
+    inputline = inputfile.readline()
+    if 'This file is for testing purposes.' in inputline:
+        mergeline = mergefile.readline()
+        while mergeline != '':
+            outputfile.write(mergeline)
+            mergerecord += 1
+            outputrecord += 1
+            mergeline = mergefile.readline()
+        outputfile.write("\n")
 
 #Close Input and Merge and Output Files
 inputfile.close()
