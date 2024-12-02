@@ -69,7 +69,7 @@ class UserList:
         return score
 # Step 3: Main Program Logic
 def main():
-    filename = 'user_data.txt'
+    filename = 'Final Project Passwords.txt'
     user_list = UserList(filename)
     while True:
         print("\nMenu:")
